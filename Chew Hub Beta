@@ -1,0 +1,128 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "#FireTeam Production",
+    Text = "Please, wait 10 seconds. we are preparing everything for you!",
+    Icon = "rbxassetid://873476045265",
+    Duration = 10,
+    Button1 = "Ok,i understand",
+})
+
+ 
+ 
+ 
+ 
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib(“ Chew Hub Beta", "BloodTheme")
+local Tab = Window:NewTab("Home")
+local Section = Tab:NewSection("")
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Tutorial"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+Section:NewButton("Multi Scripter X v3", "ButtonInfo",  function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
+
+print("Clicker")
+end)
+Section:NewButton("Brookhaven v1", "ButtonInfo", function()  
+
+    print("Clicked")
+end)                                                                      
+local Tab = Window:NewTab("[FE] Section")
+local Section = Tab:NewSection("FE section")
+Section:NewButton("[FE] Script", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-script-4253"))()
+print("Clicked")
+end)                                                                      Section:NewButton("[FE] C00lgui reborn", "ButtonInfo", function() loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+print("Clicked")
+end)                                                                      Section:NewButton("[FE] 1x1x1x1 gui", "ButtonInfo", function() loadstring(game:HttpGet('https://raw.githubusercontent.com/tyreltrijo/1x1/main/1x1x1x1'))()
+print("Clicked")
+end)                                                                      Section:NewButton(" [FE] Tools giver", "ButtonInfo", function() loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+ print("Clicked")
+end)                                                                      Section:NewButton(" [FE] Fly Gui", "ButtonInfo ", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-I-Fly-gui-V3-I-6627"))()
+print("Clicked")
+end)
+local Tab = Window:NewTab("Admin Script") 
+local Section = Tab:NewSection("Take Some Admin command Scripts")
+Section:NewButton("Nameless Admin", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-6762"))()
+print("Clicked")
+end)                                                                      Section:NewButton("Fates Admin", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fates-Admin-Script-5306"))()
+print("Clicked")
+end)                                                                      Section:NewButton("Proton Admin", "ButtonInfo", function()  loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Proton%20Free'))() 
+
+    print("Clicked")
+end)                                                                      Section:NewButton("Adonis Admin", "ButtonInfo", function() loadstring(game:HttpGet("https://pastebin.com/raw/MQ3wc7Zq", true))()
+
+    print("Clicked")
+end)                                                                      Section:NewButton("IY yield Admin", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()
+print("Clicked")
+end)                                                                      Section:NewButton("Admin Panel gui", "ButtonInfo",  function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Admin-panel-gui-7623"))()
+print("Clicked")
+end)                                                                      Section:NewButton(" Septex Admin", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Prison-Life-(Cars-fixed!)-Septex-Admin-3095"))()
+ print("Clicked")
+end)
+Section:NewSlider("Fire | Speed", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 1200
+end) 
+
+Section:NewSlider("Fire | Jumper", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+Section:NewButton("Sirius", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Sirius-6661"))()
+
+    print("Clicked")
+end)
+local Tab = Window:NewTab("games")
+local Section = Tab:NewSection("Brookhaven")
+Section:NewButton("JulHub Brookhaven", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-JulHub-New-IceHub-12025"))()
+
+    print("Clicked")
+end)                                                                      Section:NewButton("Space HUB", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Space-Hub-5907"))() 
+
+    print("Clicked")
+end)
+local Section = Tab:NewSection("adopt me!")
+Section:NewButton("Eduards Hub", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Eduards-Hub-V2-UI-Revamp-6729"))() 
+
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Prison Life")
+Section:NewButton("Prison Life Admin", "ButtonInfo",  function() loadstring(game:HttpGet("https://scriptblox.com/raw/Prison-Life-(Cars-fixed!)-Prison-life-admin-6241"))()
+
+print("Clicker")
+end)                                                                      Section:NewButton("Inf Stamina", "ButtonInfo",  function() loadstring(game:HttpGet("https://scriptblox.com/raw/Prison-Life-(Cars-fixed!)-Inf-Stamina-NO-BUGS-4782"))()
+
+print("Clicker")
+end)
+local Section = Tab:NewSection("Pet Sim. X ")
+Section:NewButton("OP GUI", "ButtonInfo", function() loadstring(game:HttpGet("https://scriptblox.com/raw/x2-Pet-Simulator-X!-OP-Gui-4839"))()
+print("txt")
+end)                                                                      Section:NewButton("Nex Hub", "ButtonInfo",  function() loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nex-Hub-6933"))()
+
+print("Clicker")
+end)
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("FireTeam")
+local Section = Tab:NewSection("INCAVO VOSTRO")
+local Sectiom = Tab:NewSection("M1st3r_D4rk")
